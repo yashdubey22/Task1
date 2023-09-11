@@ -1,0 +1,135 @@
+* {
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    padding: 0px 1px;
+}
+#nav h3 a{
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 22px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+#nav h3 a:hover{
+    color: #ff8a00;
+}
+
+  
+  #nav nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  #nav nav li {
+    margin-right: 20px;
+  }
+  
+  #nav nav li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  #nav nav li a:hover {
+    color: #ff8a00; /* Hover color */
+  }
+  
+  #nav>a>button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #111010;
+    color: #fff;
+    border: none;
+    transition: color 2s ease-in-out;
+}
+
+ #nav a button {
+    text-decoration:solid;
+    font-size: 16px;
+    box-shadow: rgb(72, 67, 67);
+    transition: color 1s ease-in-out;
+ } 
+  
+  
+  #nav button:hover {
+    background-color: #ff8a00; /* Button hover background color */
+    cursor: pointer; 
+    transition: color 1s ease-in-out;
+  }
+  
+
+
+body {
+    margin: 0px auto;
+    text-align: center;
+    
+    height:100vh;
+    background-image: url(BG.jpg);
+    background-repeat:no-repeat;
+    background-size: auto;
+}
+
+
+
+h1 {
+    font-family: 'Gilroy';
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+label {
+    width: 150px;
+    display: inline-block;
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: '';
+}
+input {
+    border: 2px solid #ccc;
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: 'gilroy';
+    padding: 10px;
+}
+form {
+    margin: 14px auto;
+    padding: 105px;
+    width: 600px;
+}
+div.form-element {
+    margin: 20px auto;
+}
+button {
+    padding: 10px;
+    font-size: 1.5rem;
+    font-family: 'Lato';
+    font-weight: 100;
+    background: yellowgreen;
+    color: white;
+    border: none;
+}
+p.success,
+p.error {
+    color: white;
+    font-family: gilroy;
+    background: yellowgreen;
+    display: inline-block;
+    padding: 2px 10px;
+}
+p.error {
+    background: orangered;
+}

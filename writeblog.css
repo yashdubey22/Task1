@@ -1,0 +1,149 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(BG.jpg);
+    background-repeat:no-repeat;
+    background-size: auto;
+    margin-top: 60px;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 1%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    padding: 29px 30px;
+  top:0;
+}
+#nav h3 a{
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 22px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+#nav h3 a:hover{
+    color: #ff8a00;
+}
+
+  
+  #nav nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  #nav nav li {
+    margin-right: 20px;
+  }
+  
+  #nav nav li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  #nav nav li a:hover {
+    color: #ff8a00; /* Hover color */
+  }
+  
+  #nav>a>button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #111010;
+    color: #fff;
+    border: none;
+    transition: color 2s ease-in-out;
+}
+
+ #nav a button {
+    text-decoration:solid;
+    font-size: 16px;
+    box-shadow: rgb(72, 67, 67);
+    transition: color 1s ease-in-out;
+ } 
+  
+  
+  #nav button:hover {
+    background-color: #ff8a00; /* Button hover background color */
+    cursor: pointer; 
+    transition: color 1s ease-in-out;
+  }
+  
+
+
+.write-blog {
+    width: 80%;
+    max-width: 778px;
+    margin: 20px auto;
+    padding: 59px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+}
+
+.write-blog h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.write-blog label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.write-blog input[type="text"],
+.write-blog textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.write-blog textarea {
+    resize: vertical;
+}
+
+.write-blog button[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.write-blog button[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #e1d8c1;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+@media (max-width: 600px) {
+    .write-blog {
+        width: 90%;
+    }
+}

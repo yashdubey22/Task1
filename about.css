@@ -1,0 +1,130 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+body{
+  position: fixed;
+}
+/* About section */
+
+.team-members {
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.member {
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.member.active {
+  opacity: 1;
+}
+
+
+.about {
+    position: relative;
+    height: 110vh;
+    width: 100vw;
+    background-image: url(BG.jpg);
+    background-repeat:no-repeat;
+    background-size: auto;
+    padding: 28px;
+}
+
+.about h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #333;
+    padding-top: 100px;
+
+}
+
+.about p{
+    font-size: 20px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #fcfcfc;
+    border-top: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    padding: 33px 30px;
+}
+#nav h3 a{
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 22px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+    padding-left: 10px;
+}
+#nav h3 a:hover{
+    color: #ff8a00;
+}
+
+  
+  #nav nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  #nav nav li {
+    margin-right: 20px;
+  }
+  
+  #nav nav li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  #nav nav li a:hover {
+    color: #ff8a00; /* Hover color */
+  }
+  
+  #nav>a>button{
+    padding: 11px 31px;
+    border-radius: 27px;
+    background-color: #111010;
+    color: #fff;
+    border: none;
+    transition: color 2s ease-in-out;
+}
+
+ #nav a button {
+    text-decoration:solid;
+    font-size: 16px;
+    box-shadow: rgb(72, 67, 67);
+    transition: color 1s ease-in-out;
+ } 
+  
+  
+  #nav button:hover {
+    background-color: #ff8a00; /* Button hover background color */
+    cursor: pointer; 
+    transition: color 1s ease-in-out;
+  }
+  
